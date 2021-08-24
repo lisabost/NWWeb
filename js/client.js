@@ -10,6 +10,15 @@ $(function(){
         toast.currentTime = 0;
         // play audio
         toast.play();
+
+        //get data-product and data-discount elements
+        var name = $(this).data("product");
+        var discount = $(this).data("discount");
+
+        //update spans with product name and discount code information
+        $('#productName').text(name);
+        $('#code').text(discount);
+
         $('#toast').toast({ autohide: false }).toast('show');
     });
 });
