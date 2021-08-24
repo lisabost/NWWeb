@@ -11,6 +11,10 @@ body {
     border: 1px solid #cecece;
 }
 
+.jumbotron {
+    margin-bottom: 0;
+}
+
 .toast {
     position: absolute;
     top: 65px;
