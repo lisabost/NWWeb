@@ -51,20 +51,20 @@
     <!-- toast -->
     <div id="toast" class="toast">
         <div class="toast-header">
-            <strong class="mr-auto">WARNING!</strong>
+            <strong class="mr-auto"><span id="top">WARNING!</span></strong>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="toast-body">
-            <strong>NO CHECKBOXES SELECTED!</strong>
+            <strong><span id="bottom">NO CHECKBOXES SELECTED!</span></strong>
         </div>
     </div>
     <!-- content -->
     <div class="container">
         <h1 id="happy">Happy Birthday!</h1>
         <hr />
-        <form role="form">
+        <form role="form" id="baloons">
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
@@ -79,15 +79,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Select your favorite balloons</h5>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="red">
+                                <input type="checkbox" class="form-check-input" name="color" id="red">
                                 <label class="form-check-label red" for="red">Red balloons</label>
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="green">
+                                <input type="checkbox" class="form-check-input" name="color" id="green">
                                 <label class="form-check-label green" for="green">Green balloons</label>
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="blue">
+                                <input type="checkbox" class="form-check-input" name="color" id="blue">
                                 <label class="form-check-label blue" for="blue">Blue balloons</label>
                             </div>
                         </div>
